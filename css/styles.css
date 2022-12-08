@@ -451,10 +451,10 @@ margin-right: 30px;
 
 }
 .social-item{
-    width: 44px;
+    /* width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
         
     transition-property: background-color;
     transition-duration: 250ms;
@@ -464,22 +464,35 @@ margin-right: 30px;
     margin-right: 10px;
 }
 .social-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 30px;
 
     fill: var(--cliets-logo);
     transition-property: fill ;
     transition-duration: 250ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-icon{
+    fill: var(--cliets-logo);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+    
 
 
-.social-item:hover,
-.social-item:hover .social-link{
+
+.social-link:hover,
+.social-link:hover .social-link{
     background-color: var(--accent-color-blue);
     fill: var(--background-color-full-white);
 }
 
 .social-link:focus,
-.social-link:focus .social-icons{
+.social-link:focus .social-link {
     background-color: var(--accent-color-blue);
     fill: var(--background-color-full-white);
 }
@@ -610,24 +623,33 @@ margin-right: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    background: linear-gradient(rgba(255,255,255,0.1),rgba(255, 255, 255, 0.1) );
+    
     
 }
-.footer-social-item:hover{
+
+
+.footer-social-link{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+    fill: var(--background-color-full-white);
+}
+.footer-social-link:hover {
     background-color: var(--accent-color-blue);
     transition-property: background-color;
     transition-duration: 250ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link{
 
-    fill: var(--background-color-full-white);
-}
+
+
 .footer-social-link:focus {
     background-color: var(--accent-color-blue);
 }
@@ -741,6 +763,9 @@ margin-right: 30px;
     overflow: auto;
 }
 .portfolio-project-link:hover .portfolio-switch-text{
+    transform: translateY(0);
+}
+.portfolio-project-link:focus .portfolio-switch-text {
     transform: translateY(0);
 }
 
