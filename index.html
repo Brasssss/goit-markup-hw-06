@@ -441,9 +441,36 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-          <input type="text" class="modal-input" name="Ім'я" placeholder=""/>
-          <input type="text" class="modal-input" name="" placeholder=""/>
-          <input type="text" class="modal-input" name="" placeholder=""/>
+          <label class="modal-label-input">
+            Ім'я
+            <input 
+            type="text" 
+            name="user-name" 
+            class="modal-input" 
+            placeholder=""
+            required />
+          </label>
+
+          <label class="modal-label-input">
+            Телефон
+            <input 
+            type="tel" 
+            name="user-tel" 
+            class="modal-input" 
+            placeholder=""
+            required />
+          </label>
+
+          <label class="modal-label-input">
+            Пошта
+            <input 
+            type="email" 
+            name="user-email" 
+            class="modal-input" 
+            placeholder=""
+            required />
+          </label>
+          <button type="submit" class="button-form-submit">Відправити</button>
         </form>
       </div>
     </div>
