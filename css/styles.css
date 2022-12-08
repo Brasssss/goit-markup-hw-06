@@ -836,3 +836,32 @@ margin-right: 30px;
     opacity: 0;
     pointer-events: none;
 }
+
+.modal-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px 0px 40px;
+    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--text-color-black);
+}
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.modal-input{
+    
+
+    width: 448px;
+    height: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
