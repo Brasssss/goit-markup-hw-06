@@ -11,7 +11,7 @@
 Цвет лого черный #000000
 Цвет лого синий #2196F3 
 Цвет выделенного текста синий  #2196F3
-    цвет рамки  #EEEEEE
+цвет рамки  #EEEEEE
 цвет ссылок в адресе #rgba(255, 255, 255, .4)
 */
 
@@ -651,16 +651,17 @@ a {
 }
 
 .footer-relative-div{
-    padding-top: 108px;
+  padding-top: 108px;
 }
 
 .button-footer-form-submit {
-  position: relative;
   display: flex;
-  
   align-items: center;
-  width: 200px;
-  height: 50px;
+  padding: 13px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.66;
+  letter-spacing: 0.06em;
   color: var(--text-color-white);
   background-color: var(--accent-color-blue);
 
@@ -677,30 +678,8 @@ a {
     border-radius: 4px;
 }
 
-
-
-.footer-button-text{
-    padding-left: 28px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.66;
-    letter-spacing: 0.06em;
-        
-}
-
-
-.icon-span{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    right: 28px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    
-}
 .plane{
+  margin-left: 10px;
 fill: var(--background-color-full-white);
 }
 
@@ -764,7 +743,7 @@ fill: var(--background-color-full-white);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  background-color: var(-background-color-dark-white);
+  background-color:var(--background-color-dark-white);
 
   transition-property: color;
   transition-property: background-color;
