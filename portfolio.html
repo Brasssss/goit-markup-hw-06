@@ -268,15 +268,17 @@
         </div>
       </section>
     </main>
-    <!-- Пiдвал/Footer -->
+   <!-------------- Пiдвал/Footer -------------------------->
     <footer class="footer">
       <div class="container flex">
         <div class="footter-first-part">
           <a class="footer-logo" lang="en" href="/"> <span class="logo-part">Web</span>Studio </a>
           <address class="adress-company">
             <ul>
-              <li><a class="address-link" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
-              <li>
+              <li class="footer-adress-item">
+                <a class="address-link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="footer-adress-item">
                 <a class="address-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
               <li><a class="address-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -316,6 +318,21 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <div class="footer-form-part">
+            <label class="footer-label-input">
+              <span class="footer-form-title">Підпишіться на розсилку</span>
+              <input
+                type="email"
+                name="user-email"
+                class="footer-input"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="button-footer-form-submit">Підписатися</button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
